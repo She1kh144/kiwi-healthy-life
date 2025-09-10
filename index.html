@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Здоровая жизнь — советы и практики</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">🥝 kivi heatly life</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button id="nav-toggle" class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">☰</button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#nutrition">Питание</a></li>
+          <li><a href="#exercise">Физическая активность</a></li>
+          <li><a href="#sleep">Сон</a></li>
+          <li><a href="#mental">Психическое</a></li>
+          <li><a href="#articles">Статьи</a></li>
+          <li><a href="#contact">Контакт</a></li>
+        </ul>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Здоровая жизнь — простые привычки, большие изменения</h1>
+        <p class="lead">Краткие советы по питанию, тренировкам, сну и заботе о психическом здоровье.</p>
+        <p><a class="btn" href="#articles">Читать статьи</a></p>
+      </div>
+    </section>
+
+    <section id="nutrition" class="section container">
+      <h2>Питание</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Сбалансированное питание</h3>
+          <p>Берите в рацион овощи, белки и цельные злаки. Простые рецепты и планирование — залог успеха.</p>
+        </article>
+
+        <article class="card">
+          <h3>Гидратация</h3>
+          <p>Пейте воду в течение дня — это помогает концентрации и обмену веществ.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="exercise" class="section container">
+      <h2>Физическая активность</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Кардио и сила</h3>
+          <p>Сочетайте кардио и силовые тренировки для общей формы и силы.</p>
+        </article>
+
+        <article class="card">
+          <h3>Поддерживайте регулярность</h3>
+          <p>Лучше 30 минут активности 5 раз в неделю, чем нереалистичные нагрузки раз в месяц.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sleep" class="section container">
+      <h2>Сон</h2>
+      <p class="text">Качественный сон 7–9 часов помогает восстановлению и настроению. Создайте рутину отхода ко сну.</p>
+    </section>
+
+    <section id="mental" class="section container">
+      <h2>Психическое здоровье</h2>
+      <p class="text">Медитация, движение, общение и отдых — ключевые элементы устойчивости.</p>
+    </section>
+
+    <section id="articles" class="section container">
+      <h2>Статьи</h2>
+      <div id="articles-list" class="grid"></div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Связаться</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Имя
+          <input type="text" id="name" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" name="email" required />
+        </label>
+        <label>
+          Сообщение
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Отправить</button>
+          <button type="reset" class="btn btn-secondary">Очистить</button>
+        </div>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> ЗдороваяЖизнь — Все права защищены</small>
+      <a class="back-top" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
